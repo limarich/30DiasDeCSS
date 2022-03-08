@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    overflow:hidden;
+}
+section {
+    width: 100%;
+    height: 100%;
+}
+.slider {
+    font-size: 12em;
+    color: #193d51;
+    position: absolute;
+    white-space: nowrap;
+    line-height: 50vh;
+    animation: sliding 10s linear infinite;
+    box-shadow: 1px 2px 1px #c2c2c2;
+}
+.slider:nth-child(1) {
+    background: #fefefe;
+}
+.wrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+.wrapper .slider {
+    color: #fff;
+    background: red;
+    border-right: 2px solid black;
+}
+@keyframes sliding {
+    0% {
+        transform: translate(0, 50%);
+    }
+    100% {
+        transform: translate(-50%, 50%);
+    }
+}
