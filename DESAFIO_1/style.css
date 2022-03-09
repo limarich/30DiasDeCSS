@@ -18,7 +18,7 @@ ul li {
     list-style: none;
     width: 100%;
     position: relative;
-    transform: rotate(-30deg) skew(25deg);
+    transform: rotate(-30deg) skewX(25deg);
 }
 ul li i {
     font-size: 4em;

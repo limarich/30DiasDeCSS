@@ -27,7 +27,7 @@ button::after {
     position: absolute;
     width: 15px;
     height: 5px;
-    transform: skew(50deg);
+    transform: skewX(50deg);
     transition: .5s linear;
 }
 button::before {
