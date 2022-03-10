@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(17, 135, 214);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-family: 'Press Start 2P', cursive;
+}
+span::after {
+    content: " ";
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {content: '💻'}
+    50% {content: '🦧'}
+    100% {content: '👾'}
+}
