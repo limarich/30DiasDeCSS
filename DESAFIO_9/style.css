@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(28, 98, 189);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+div {
+    border-top: 10px solid #fff;
+    display: flex;
+}
+p {
+    display: block;
+    width: 3px;
+    height: 300px;
+    background: #fff;
+    position: relative;
+    transform-origin: top;
+    margin: 0 28px;
+}
+p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    box-shadow: inset 0px 0px 2px #fefefe, 0px 0px 2px #0a0a0a6e;
+}
+p:first-child {
+    animation: leftArm 3s linear infinite;
+}
+p:last-child {
+    animation: rightArm 3s 1.5s linear infinite;
+}
+p:nth-child(2),
+p:nth-child(3),
+p:nth-child(4) {
+    animation: centerArm 2s 1.5s linear infinite alternate;
+}
+@keyframes leftArm {
+    0% { transform: rotate(0)}
+    25% {transform: rotate(60deg)}
+    45% {transform: rotate(0deg)}
+    100% {transform: rotate(0deg)}
+}
+@keyframes rightArm {
+    0% { transform: rotate(0)}
+    25% {transform: rotate(-60deg)}
+    45% {transform: rotate(0deg)}
+    100% {transform: rotate(0deg)}
+}
+@keyframes centerArm {
+    25% {transform: rotate(-1deg)}
+}
