@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: #3586ff;
+}
+section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+svg {
+    transform: scaleY(.7);
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+}
+.text {
+    background-color: #fefefe;
+    font-family: cursive;
+    text-align: center;
+}
+.text h1 {
+    font-size: 3em;
+    color: #fefefe;
+    text-shadow: 0 0 20px #3586ff;
+    animation:5s animate linear infinite;
+}
+.text p {
+    max-width: 700px;
+    font-size: 1.6em;
+    color: #2c2c2;
+    padding: 2em 1em;
+    margin: 30px  auto;
+    border-radius: 10px;
+    box-shadow:  0 0 20px #bbb;
+}
+@keyframes animate {
+    0%,100% {
+        transform: skewX(30deg);
+    }
+    50% {
+        transform: skewX(-30deg);
+    }
+
+}
