@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards effect</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="" id="blur"></div>
+        <div class="container">
+            <div class="card" id="card-1" onclick="toggle(1)">
+                <img src="./profile.png" alt="">
+                <p class="name">Richard Lima</p>
+                <p class="occupation">Dev Frontend</p>
+                <div class="box">
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae numquam, natus facere quibusdam vitae hic nesciunt error reprehenderit laudantium consectetur, cumque consequuntur. Cupiditate, quos tempore amet sapiente provident commodi dicta.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./profile.png" alt="">
+                <p class="name">Richard Lima</p>
+                <p class="occupation">Dev Frontend</p>
+            </div>
+            <div class="card">
+                <img src="./profile.png" alt="">
+                <p class="name">Richard Lima</p>
+                <p class="occupation">Dev Frontend</p>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function toggle(key) {
+        document.getElementById(`card-${key}`).classList.toggle("open")
+        document.getElementById(`blur`).classList.toggle("blur")
+    }
+</script>
+</html>
