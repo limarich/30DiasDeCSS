@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Oxygen:wght@700&family=Roboto:ital,wght@0,300;1,400;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2c2c2c;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  height: 20rem;
+  width: 20rem;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #383838, -15px -15px 25px #383838, 15px 15px 25px #202020;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+.btn::before {
+  transition: 0.2s;
+  content: ">";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #d3cfcf;
+  font-size: 10em;
+  font-family: oxygen;
+  font-weight: bold;
+  transform:  translate(-50%, -50%);
+}
+.btn:hover::before  {
+    transition: 0.5s;
+    text-shadow: -5px -5px 10px #383838, 5px -5px 10px #202020, -5px -5px 10px #202020;
+}
+.btn:hover {
+    transition: 1s;
+    box-shadow: inset 0 0 15px #202020, 15px 15px 25px #202020;
+}
